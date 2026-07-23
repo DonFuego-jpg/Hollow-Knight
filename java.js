@@ -3,26 +3,26 @@ const datosGuia = {
     personajes: {
         titulo: "Personajes",
         descripcion: "En esta sección encontrarás información sobre los personajes del juego, incluyendo sus habilidades, historia y cómo interactúan con el mundo de Hollow Knight.",
-        imagen: "../../image/personajes.jpg",
-        enlace: "../guiaHK/personajes.html"
+        imagen: "personajes.jpg",
+        enlace: "personajes.html"
     },
     enemigos: {
         titulo: "Enemigos",
         descripcion: "Descubre los diferentes enemigos que encontrarás en el juego, sus patrones de ataque, la historia que esconden detrás y cómo derrotarlos.",
-        imagen: "../../image/enemigos2.gif",
-        enlace: "../guiaHK/enemigos.html"
+        imagen: "enemigos2.gif",
+        enlace: "enemigos.html"
     },
     habilidades: {
         titulo: "Habilidades",
         descripcion: "Aprende sobre las habilidades que puedes adquirir a lo largo del juego, cómo obtenerlas y cómo utilizarlas para superar diferentes obstaculos, de igual manera maniobras especiales.",
-        imagen: "../../image/Bailecito.gif",
-        enlace: "../guiaHK/habilidades.html"
+        imagen: "Bailecito.gif",
+        enlace: "habilidades.html"
     },
     GuiaDelJuego: {
         titulo: "Guía completa del juego",
         descripcion: "En esta sección encontrarás una guía completa del juego, donde podrás encontrar un mapa de todos los puntos claves del juego, asimismo como pasarlo sin complicaciones en base a como los mejores jugadores de Hollow Knight lo hicieron.",
-        imagen: "../../image/Banner2.jpg",
-        enlace: "../guiaHK/Guia.html"
+        imagen: "Banner2.jpg",
+        enlace: "Guia.html"
     }
 };
 
@@ -35,10 +35,10 @@ const frasesPorTema = {
 
 /*/Cambio de musica muajajaja/*/
 const musicaPorTema = {
-    "original": "../../audio/Dirtmouth1.mp3",
-    "tema-grimm": "../../audio/Grimm-Acordion.mp3",
-    "tema-infeccion": "../../audio/Infeccion.mp3",
-    "tema-palacio" : "../../audio/WhitePalace.mp3"
+    "original": "Dirtmouth1.mp3",
+    "tema-grimm": "Grimm-Acordion.mp3",
+    "tema-infeccion": "Infeccion.mp3",
+    "tema-palacio" : "WhitePalace.mp3"
 }
 
 
