@@ -1,0 +1,632 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+    font-size: 18px;
+    background-image: url('../image/CityofTears.jpg');
+    background-size: cover ;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:no-repeat ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1, h2, h3 {
+    text-shadow: 0px 0px 8px #88ccff, 0px 0px 15px #88ccff;
+}
+
+h1, h2, h3, h4, .logo {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header {
+    background-color: rgb(0, 0, 0);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+.logoPrincipal {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 80px;
+    overflow: hidden;
+}
+.logoPrincipal a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.logoPrincipal img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}
+.links-nav {
+    display: flex;
+    list-style: none; 
+    gap: 20px;        
+    padding: 0;
+    margin: auto;
+}
+.links-nav a {
+    color: #ffffff; 
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.links-nav li{
+    margin-bottom: 0px;
+}
+.links-nav a:hover {
+    color: #88b6e3; 
+}
+.links-nav a.activo {
+    border-bottom: 2px solid #88b6e3;
+    padding-bottom: 4px;
+}
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255,255,255,0.050)) ,url('../image/Banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo {
+    font-size: 10px;
+    cursor: default;
+}
+.hero-content {
+    font-size: 50px;
+    cursor: default;
+}
+.page-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  
+}
+.page-container h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(238, 234, 155);
+    padding: 10px;
+}
+.page-container hr{
+    margin: 10px;
+}
+.cajaDeContenido {
+    padding: 50px 30px;
+    background-color: rgba(0, 0, 0, 0.827);
+    flex-grow: 1;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.cartas1{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.HK-card{
+    background-color: rgba(0, 10, 28, 0.681);
+    border-radius: 12px;
+    padding: 20px 10px;
+    text-align: center;
+    transition: transform 0.4s;
+    margin: 10px;
+}
+.HK-card:hover{
+    transform: translateY(-5px);
+}
+.HK-imagen {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #04040475;
+}
+.HK-imagen img {
+    padding: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.HK-texto{
+    padding: 15px ;
+    margin: 15px;
+}
+.HK-texto h3 {
+    margin-bottom: 12px;
+}
+.HK-texto button{
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 0;
+    transition: color 0.3s;
+    background-color:rgb(255, 255, 255) ;
+    color: rgb(242, 111, 11);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.HK-texto button a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+
+}
+.HK-texto button:hover{
+    color:rgb(255, 255, 255) ;
+    background-color: #000000;
+    border-color: white;
+    transform: scale(1.1)
+}
+.guia-juego{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);  
+}
+.guia-juego-content {
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin: 0 auto;
+}
+.guia-superior {
+    display: flex;
+    width: 100%;
+}
+.guia-temas{
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    border-top: 2px solid rgba(136, 182, 227, 0.3);
+}
+.radio-tema{
+    color: #aeb8c4;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+.radio-tema:hover{
+    color: #88b6e3;
+    transform: scale(1.1);
+}
+.radio-tema input[type="radio"] {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #9ab1df;
+}
+
+.guia-juego-imagen {
+    flex: 1;
+    height: 500px;
+}
+.guia-juego-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.guia-juego-texto {
+    flex: 1;
+    padding: 35px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.guia-juego-texto h2 {
+    margin-bottom: 20px;
+    color: #88b6e3;
+    font-size: 20px;
+    text-align: left;
+}
+.guia-juego-texto p {
+    margin-bottom: 20px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+.guia-juego-texto button {
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 0;
+    transition: color 0.3s;
+    background-color:rgb(255, 255, 255) ;
+    color: rgb(242, 111, 11);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.guia-juego-texto button a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+
+}
+.guia-juego-texto button:hover{
+    color:rgb(255, 255, 255) ;
+    background-color: #000000;
+    border-color: white;
+    transform: scale(1.1)
+}
+#btn-tema {
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 30px;
+    background-color: #ffffff;
+    color: goldenrod;
+    transition: all 0.3s ease;
+}
+#btn-tema:hover {
+    background-color: #000000;
+    border-color: #ffffff;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/*Soundtracks*/
+.cajaDeContenido-sound{
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px;
+    background-color: rgba(0, 0, 0, 0.827);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.HK-img-sound{
+    display: block;
+    padding: 10px;
+    margin: 20px;
+}
+.HK-img-sound img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+.HK-eggs-text{
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+#lista-sound{
+    list-style: none;
+    padding: 10px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+#lista-sound li{
+    width: 590px;
+}
+figure{
+    width: 100%;
+
+}
+#lista-sound figure{
+    width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid rgb(255, 187, 0);
+    padding-bottom: 15px;
+    background-color: #163c62;
+}
+#lista-sound h3{
+    padding-top: 15px;
+}
+#lista-sound figure img {
+    width: 50%;
+    display: block;
+    margin: 10px auto;
+}
+#lista-sound figure p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/*/aaaaaaaaaaaaaaaaaaaaaaaaaaaa/*/
+
+.menu-desplegable {
+    position: relative; 
+}
+.btn-categoria {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: inherit;
+    padding: 10px;
+}
+
+.submenu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    right: 0; 
+    background-color: #1a252f;
+    list-style: none;
+    border-color: white;
+    padding: 0;
+    margin: 0;
+    width: 220px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+    border-radius: 5px 0 5px 5px;
+    z-index: 1000;
+}
+.submenu.activo {
+    display: block;
+}
+
+.btn-tema-opcion {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #bdc3c7;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+}
+.btn-tema-opcion:hover {
+    background-color: #2c3e50;
+    color: white;
+}
+.submenu-item-nested {
+    position: relative;
+}
+.submenu-anidado {
+    display: none; 
+    position: absolute;
+    top: 0;
+    right: 100%; 
+    background-color: #1a252f;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 220px;
+    box-shadow: -5px 8px 16px rgba(0,0,0,0.5); 
+    border-radius: 5px 0 5px 5px;
+}
+.submenu-item-nested:hover > .submenu-anidado {
+    display: block;
+}
+.btn-tema-final {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #bdc3c7;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.btn-tema-final:hover {
+    background-color: #2c3e50;
+    color: white;
+}
+
+
+
+.contenedor-carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%; 
+    max-width: 800px;
+    margin: 40px auto;
+}
+.ventana-carrusel {
+    width: 100%;
+    overflow: hidden; 
+    border: 2px solid #5b4600; 
+    border-radius: 8px;
+    background-color: #000c19ce; 
+}
+.pista-carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+.tarjeta-gigante {
+    min-width: 100%; 
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(161, 175, 234);
+}
+
+.tarjeta-gigante img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+.boton-carrusel {
+    background-color: transparent;
+    color: #d4af37;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 0 20px;
+    transition: transform 0.2s, text-shadow 0.2s;
+}
+
+.boton-carrusel:hover {
+    transform: scale(1.2);
+    text-shadow: 0px 0px 10px #d4af37;
+}
+
+
+
+/*/ body alterno-infected/*/
+.tema-infeccion{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255,255,255,0.050)) ,url('../image/infected.jpg');
+    color: #fac217;
+}
+.tema-infeccion .hero{
+        background-image: linear-gradient(rgba(232, 157, 100, 0.6), rgba(255,255,255,0.050)) ,url('../image/infected-banner.jpg');
+}
+.tema-infeccion .hero h2{
+    color: #88b6e3;
+}
+
+
+
+/*/ body alterno-grimm/*/
+.tema-grimm{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255,255,255,0.050)) ,url('../image/Grimm-background.jpg');
+    color: rgb(207, 1, 1);
+}
+.tema-grimm .hero {
+    background-image: linear-gradient(rgba(232, 157, 100, 0.6), rgba(255,255,255,0.050)) ,url('../image/Grimm.gif');
+}
+.tema-grimm .hero h2 {
+    color: rgb(194, 0, 0);
+}
+.tema-grimm h2{
+    text-shadow: 0px 0px 8px #f9c37d, 0px 0px 15px #464200;
+}
+.tema-grimm h3{
+    text-shadow: 0px 0px 8px #f9c37d, 0px 0px 15px #373300;
+}
+.tema-grimm h4{
+    text-shadow: 0px 0px 8px #f9c37d, 0px 0px 15px #ffee00;
+}
+.tema-grimm footer {
+    background-color: black;
+}
+.tema-grimm header {
+background-color: rgb(18, 2, 2);
+}
+
+.tema-grimm .logoPrincipal {
+    content: url('../image/grimm-removebg-preview.png');
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+.tema-grimm .logoPrincipal a {
+    content: url('../pages/home/Inicio.html');
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.tema-grimm .logoPrincipal img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}
+.tema-grimm #guia-titulo {
+    color: #ff0303;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*/ Animacion de Carrusel/*/
+#guia-img,
+#guia-titulo,
+#guia-desc,
+.boton-guia{
+    transition: opacity 0.5s ease-in-out;
+}
+.oculto-animacion {
+    opacity: 0;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: #002e54d1;
+    color: rgba(255, 255, 255, 0.799);
+    text-align: center;
+    padding: 30px 20px;
+}
+footer p{
+    margin-bottom: 12px;
+    font-size: 14px;
+    cursor: default;
+}
+.links-de-pie{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.links-de-pie a{
+    color:#8d7203 ;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+.links-de-pie a:hover{
+    color: white;
+    transform: scale(1.3);
+    border-color: black;
+}

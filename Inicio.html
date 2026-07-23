@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>Hollow Knight</title>
+    <link rel="icon" href="../../image/LogoPrincipal.jpg" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logoPrincipal">
+                <a href="../home/Inicio.html"><img src="../../image/LogoPrincipal.jpg" alt=""></a>
+            </div>
+            <div class="navegacion">
+                <ul class="links-nav">
+                    <li> <a href="../home/Inicio.html" class="activo">Inicio</a></li>
+                    <li> <a href="../Lore/LoreGeneral.html">Lore Completo</a></li>
+                    <li> <a href="../DlC'S/DLC'S.html">DLC'S</a></li>
+                    <li><a href="../Merch/merch.html">Merch</a></li>
+                    
+                    <li class="menu-desplegable">
+                        <button class="btn-categoria" id="btn-temas">Cambiar Tema ▼</button>
+                        <ul class="submenu" id="submenu-temas">
+                            <li class="submenu-item-nested">
+                                <button class="btn-tema-opcion">Hollow Knight ◀</button>
+                                <ul class="submenu-anidado">
+                                    <li><button class="btn-tema-final" value="original">Bocasucia</button></li>
+                                    <li><button class="btn-tema-final" value="tema-infeccion">Infectado</button></li>
+                                    <li><button class="btn-tema-final" value="tema-grimm">Compañia de Grimm</button></li>
+                                    <li><button class="btn-tema-final" value="tema- abismo">El Abismo</button></li>
+                                    <li><button class="btn-tema-final" value="tema-palacio">Palacio Blanco</button></li>
+                                </ul>
+                            </li>
+                            <li class="submenu-item-nested">
+                                <button class="btn-tema-opcion">Silksong ◀</button>
+                                <ul class="submenu-anidado">
+                                    <li><button class="btn-tema-final" value="tema-pharloom">Pharloom</button></li>
+                                    <li><button class="btn-tema-final" value="tema-ciudadela">La Ciudadela</button></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h2 id="titulo-principal">Bienvenidos viajeros</h2>
+        </div>
+    </section>
+    <section class="cajaDeContenido">
+        <div class="page-container">
+        <h2>Descubre mas sobre la historia de nuestros protagonistas <hr></h2>
+            <div class="cartas1">
+                <div class="HK-card">
+                    <div class="HK-imagen">
+                        <img src="../../image/Hollow_Knight_2026_cover_art.jpg" alt="">
+                    </div>
+                    <div class="HK-texto">
+                    <h3>El lore de nuestro Caballerito</h3>
+                    <p>aqui se relatará toda la historia de el primer juego lanzado, donde encontrarás todo el lore y una guia completa del juego</p>
+                    <button type="button" class="boton-card1"><a href="../Lore/HK-lore.html">Ver más</a></button>
+                    </div>
+                </div>
+                <div class="HK-card">
+                    <div class="HK-imagen">
+                        <img src="../../image/SilkSong.png" alt="">
+                    </div>
+                    <div class="HK-texto">
+                    <h3>El lore de la Cilantro</h3>
+                    <p>aqui se relatará toda la historia de el segundo juego lanzado, donde encontrarás todo el lore y una guia completa del juego</p>
+                    <button type="button" class="boton-card1"><a href="../Lore/HK-lore.html">Ver más</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="guia-juego">
+                <div class="guia-juego-content">
+                    <div class="guia-superior">
+                        <div class="guia-juego-imagen">
+                            <img id="guia-img" src="../../image/Banner2.jpg" alt="Banner Guía">
+                        </div>
+                            <div class="guia-juego-texto">
+                                <h2 id="guia-titulo">Guia completa del juego</h2>
+                                <p id="guia-desc">En esta sección encontrarás una guía completa del juego, donde podrás encontrar información sobre los personajes, enemigos, habilidades y mucho más.</p>
+                                <button type="button" class="boton-guia"><a id="guia-link" href="../guiaHK/Guia.html">Ver más</a></button>
+                            </div>
+                        </div>
+                        <div class="guia-temas">
+                            <label class="radio-tema">
+                                <input type="radio" name="tema-seleccionado" value="GuiaDelJuego" checked>
+                            </label>
+                            <label class="radio-tema">
+                                <input type="radio" name="tema-seleccionado" value="personajes"> 
+                            </label>
+                            <label class="radio-tema">
+                                <input type="radio" name="tema-seleccionado" value="enemigos"> 
+                            </label>
+                            <label class="radio-tema">
+                                <input type="radio" name="tema-seleccionado" value="habilidades"> 
+                            </label>
+                        </div>
+                    </div>
+            </section>
+            <section class="cajaDeContenido-sound">
+                <div class="page-container">
+                    <h2>Banda Sonora de Hollow Knight<hr></h2>
+                    <div class="HK-sound-page">
+                        <div class="HK-img-sound">
+                            <img src="../../image/Lluvia.gif" alt="">
+                        </div>
+                        <div class="HK-eggs-text">
+                            <div class="HK-sound-list">
+                                <ul id="lista-sound">   <div class="contenedor-carrusel">
+                                    <button id="btn-izq" class="boton-carrusel">◄</button>
+                                    <div class="ventana-carrusel">
+                                        <div class="pista-carrusel" id="pista">
+                                            <div class="tarjeta-gigante">
+                                                <h3>Sealed Vessel</h3><br>
+                                                <video width="100%" controls>
+                                                    <source src="../../video/Hollow Knight OST - Sealed Vessel_720p.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                            <div class="tarjeta-gigante">
+                                                <h3>Mantis Lords</h3><br>
+                                                <video width="100%" controls>
+                                                    <source src="../../video/Hollow Knight OST - Mantis Lords_720p.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                            <div class="tarjeta-gigante">
+                                                <h3>Void Heart</h3><br>
+                                                <video width="100%" controls>
+                                                    <source src="../../video/Void Heart _ Hollow Knight OST _ Christopher Larkin_720p.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                            <div class="tarjeta-gigante">
+                                                <h3>Path of Pain</h3><br>
+                                                <video width="100%" controls>
+                                                    <source src="../../video/Hollow Knight - Sealed Vessel - Path of Pain Music_720p.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                            <div class="tarjeta-gigante">
+                                                <h3>Nosk</h3><br>
+                                                <video width="100%" controls>
+                                                    <source src="../../video/Hollow Knight OST - Nosk_720p.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button id="btn-der" class="boton-carrusel">►</button>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <footer>
+        <p>Derechos reservados por <span>DonFuego</span></p>
+        <div class="links-de-pie">
+            <a href="">aa</a>
+            <a href="">aaa</a>
+            <a href="">aaaa</a>
+        </div>
+    </footer>
+<audio id="musica-fondo" src="../../audio/Dirtmouth1.mp3" type="audio/mpeg" autoplay loop></audio>
+        <script src="../../js/java.js"></script>
+</body>
+</html>
