@@ -30,7 +30,7 @@ botonEntrar.addEventListener("click", () => {
 
     setTimeout(() => {
 
-        window.location.href = "../home/Inicio.html";
+        window.location.href = "Inicio.html";
 
     }, 700);
 
